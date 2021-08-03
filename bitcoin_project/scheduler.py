@@ -62,9 +62,9 @@ def run_fn():
    
    
    
-schedule.every(10).seconds.do(run_fn)
+schedule.every(60).minutes.do(run_fn)
 
 while(True):
 
    schedule.run_pending()
-   time.sleep(1)
+   time.sleep(60)
